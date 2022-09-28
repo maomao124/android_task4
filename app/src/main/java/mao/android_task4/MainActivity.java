@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.DatePicker;
@@ -57,5 +58,7 @@ public class MainActivity extends AppCompatActivity
                 datePickerDialog.show();
             }
         });
+
+        startActivity(new Intent(MainActivity.this, MainActivity2.class));
     }
 }
